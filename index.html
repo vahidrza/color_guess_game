@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data">
+        <h1>Guessing Game</h1>
+        <h2 id="value">Color Zone</h2>
+        <div class="resultscore">
+          <h2 id="result">Result Zone</h2>
+          <h2 id="score">Current Score - Win:0 ; Lose:0</h2>
+        </div>
+      </div>
+      <div class="configs">
+        <button id="start">Start</button>
+        <div id="levelChecker">
+          <form action="" id="myForm">
+            <input
+              type="radio"
+              name="checkbox"
+              value="easy"
+              checked="checked"
+              id="easy"
+            />Easy
+            <input type="radio" name="checkbox" value="hard" id="hard" />Hard
+          </form>
+        </div>
+      </div>
+      <div id="colors"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
